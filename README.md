@@ -8,8 +8,8 @@ Team Members:
 - **Anns Tomy** - GitHub
 - **Dhanya Davis** - GitHub
 - **Meenakshi Rajesh** - GitHub
-- **Gobu Babu** - GitHub
-- **Aaron Joseph** - GitHub
+- **Gobu Babu** - [GitHub](https://github.com/gobucbabu)
+- **Aaron Joseph** - [GitHub](https://github.com/aaronmj7)
 
 ## Project Overview
 
