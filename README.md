@@ -5,9 +5,9 @@ This repository contains the work of Team 2 for Assignment 2 - Kaggle Challenge,
 Team Members:
 
 - **Bineeth Mathew** - [GitHub](https://github.com/Bineethmathew)
-- **Anns Tomy** - [GitHub]()
-- **Dhanya Davis** - [GitHub]()
-- **Meenakshi Rajesh** - [GitHub]()
+- **Anns Tomy** - [GitHub]
+- **Dhanya Davis** - [GitHub]
+- **Meenakshi Rajesh** - [GitHub]
 - **Gobu Babu** - [GitHub](https://github.com/gobucbabu)
 - **Aaron Joseph** - [GitHub](https://github.com/aaronmj7)
 
