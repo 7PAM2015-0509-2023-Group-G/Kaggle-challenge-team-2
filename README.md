@@ -1,8 +1,20 @@
-# Kaggle-challenge-team-2
+# Team 2 - Kaggle Challenge
 
-This is Team 2 of Kaggle Challenge, a group assignment conducted at the University of Hertfordshire, UK, where students will participate in a Kaggle competition: [Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic). Each team is tasked to develop a statistical/machine learning model and will submit their model results to Kaggle to obtain a score. Teams will also present their findings in a group presentation with a PowerPoint presentation. Teams will create a collaborative research environment using GitHub and Google Colab, explore and visualize the data, build a pipeline to pre-process the dataset, train a viable model, and customize it.
+This repository contains the work of Team 2 for the Kaggle competition: [Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic). This group assignment is part of our coursework at the University of Hertfordshire, UK.
 
-Predict which passengers of The Spaceship Titanic, an interstellar passenger liner, were transported by a spacetime anomaly using records recovered from the spaceship’s damaged computer system.
+## Project Overview
+
+Our task is to develop a statistical/machine learning model to predict which passengers of the Spaceship Titanic were transported by a spacetime anomaly, using records recovered from the spaceship’s damaged computer system. 
+
+## Objectives
+
+- **Data Exploration and Visualization**: Explore and visualize the dataset.
+- **Data Pre-processing**: Build a pipeline to pre-process the dataset.
+- **Model Training**: Train and customize a viable model.
+- **Collaboration**: Use GitHub and Google Colab for a collaborative research environment.
+- **Presentation**: Present our findings in a group presentation with a PowerPoint presentation.
+
+
 
 ## Exploratory Data Analysis
 
@@ -13,3 +25,6 @@ Predict which passengers of The Spaceship Titanic, an interstellar passenger lin
 ## X-AI
 
 ## Conclusion
+
+
+We hope you find our project insightful and useful!
