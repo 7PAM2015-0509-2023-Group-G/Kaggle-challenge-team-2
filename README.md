@@ -2,7 +2,7 @@
 
 This repository contains the work of Team 2 for Assignment 2 - Kaggle Challenge, part of our coursework at the University of Hertfordshire, UK.
 
-## Team Members
+Team Members:
 
 - **Bineeth Mathew** - GitHub
 - **Anns Tomy** - GitHub
