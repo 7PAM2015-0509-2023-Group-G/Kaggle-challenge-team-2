@@ -1,3 +1,5 @@
+<a id="readme-top"></a>
+
 # Team 2 - Kaggle Challenge
 
 This repository contains the work of Team 2 for Assignment 2 - Kaggle Challenge, part of our coursework at the [University of Hertfordshire, UK](https://www.herts.ac.uk/).
@@ -48,6 +50,8 @@ Team Members:
 
 This is a group assignment where students will participate in a Kaggle competition: [Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic). Our task is to develop a statistical/machine learning model to predict which passengers of the Spaceship Titanic were transported by a spacetime anomaly, using records recovered from the spaceship’s damaged computer system. We will submit our model results to Kaggle to obtain a score and present our findings in a group presentation.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Objectives
 
 - **Data Exploration and Visualization**: Explore and visualize the dataset.
@@ -56,18 +60,30 @@ This is a group assignment where students will participate in a Kaggle competiti
 - **Collaboration**: Use GitHub and Google Colab for a collaborative research environment.
 - **Presentation**: Present our findings in a group presentation with a PowerPoint presentation.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Data
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Exploratory Data Analysis
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Pre-Processing
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Models
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## X-AI
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Conclusion
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-We hope you find our project insightful and useful!
+We hope you find our project insightful and useful! :smile:
