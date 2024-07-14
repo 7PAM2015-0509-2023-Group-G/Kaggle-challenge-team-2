@@ -1,6 +1,6 @@
 # Team 2 - Kaggle Challenge
 
-This repository contains the work of Team 2 for Assignment 2 - Kaggle Challenge, part of our coursework at the University of Hertfordshire, UK.
+This repository contains the work of Team 2 for Assignment 2 - Kaggle Challenge, part of our coursework at the [University of Hertfordshire, UK](https://www.herts.ac.uk/).
 
 Team Members:
 
@@ -10,6 +10,39 @@ Team Members:
 - **Meenakshi Rajesh** - [GitHub](https://github.com/Meenakshi-Rajesh)
 - **Gobu Babu** - [GitHub](https://github.com/gobucbabu)
 - **Aaron Joseph** - [GitHub](https://github.com/aaronmj7)
+
+[Contributions](https://github.com/7PAM2015-0509-2023-Group-G/Kaggle-challenge-team-2/graphs/contributors)
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#project-overview">Project Overview</a>
+    </li>
+    <li>
+      <a href="#objectives">Objectives</a>
+    </li>
+    <li>
+      <a href="#data">Data</a>
+    </li>
+    <li>
+      <a href="#exploratory-data-analysis">Exploratory Data Analysis</a>
+    </li>
+    <li>
+      <a href="#pre-processing">Pre-Processing</a>
+    </li>
+    <li>
+      <a href="#models">Models</a>
+    </li>
+    <li>
+      <a href="#x-ai">X-AI</a>
+    </li>
+    <li>
+      <a href="#conclusion">Conclusion</a>
+    </li>
+  </ol>
+</details>
 
 ## Project Overview
 
