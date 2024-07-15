@@ -112,7 +112,29 @@ test.csv - Personal records for the remaining one-third (~4300) of the passenger
 
 ## Exploratory Data Analysis
 <!-- content -->
+df.info and df.describe reveal that the dataset has null values and that the data types are not optimal.​
 
+The distribution of the target variable, "Transported," is nearly balanced. This benefits training machine learning models from a balanced distribution, since it eliminates bias towards a certain class.​
+
+The "age" feature nearly resembles a normal distribution, but all other numerical features show skewness. The box plots and df.describe corroborate this observation.
+
+The "VIP" feature shows nearly equal distribution of each cases in which people were transported and cases in which they weren't.​This evenly distributed data indicates that the "VIP" feature has little effect on the target variable. We dropped the "VIP" feature from additional examination as a result.​
+
+The "Num" feature's distribution plot shows that it has a substantial impact on the target variable.​
+
+The "Deck" feature's value counts plot shows how the target variable is influenced differently by the many categories under this feature.​
+
+The correlation heatmap shows that the numerical features do not significantly correlate with one another. Because there aren't many strong correlations between the numerical characteristics, it's likely that the features are independent of one another. ​
+
+This makes machine learning models more effective by lowering multicollinearity and guaranteeing that each feature adds distinct information to the target variable's prediction.​
+
+The 'group Count' vs 'Transported' count graphic makes it evident that Travellers in groups of two to seven are more likely to be transported.​
+
+This implies that the quantity of passengers in a group affects the results of transportation. ​
+
+Consequently, two new features, 'Group' and 'Groupcount', have been created to capture this relationship in the dataset.​
+
+Based on the graph indicating lower transportation likelihood for group count 1, a new feature 'SoloTraveler' was created by checking if the 'Group' count was 1, capturing passengers traveling alone in the dataset.​
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
