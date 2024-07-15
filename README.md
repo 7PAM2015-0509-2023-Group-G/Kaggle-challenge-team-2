@@ -114,4 +114,4 @@ This is a group assignment where students will participate in a Kaggle competiti
 
 
 
-We hope you find our project insightful and useful! :smile:
+We hope you find our project insightful and useful!
