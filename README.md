@@ -141,6 +141,10 @@ Based on the graph indicating lower transportation likelihood for group count 1,
 
 ## Pre-Processing
 <!-- content -->
+Preprocessing involves converting raw data into a clean format, which is essential for enhancing the performance and accuracy of machine learning models. Five preprocessing methods were used in this analysis: Dropping Features, Encoding, Scaling, Imputation, and Principal Component Analysis (PCA). 
+The Dropping Features method was employed to remove irrelevant features, resulting in the exclusion of two columns, 'Passenger ID' and 'Name', since Passenger IDs are unique for each record and 'Name' had only 220 non-unique values.
+One-hot encoding was used to convert Boolean and categorical features into integers to simplify the analysis. The columns 'CryoSleep' and 'Transported' contained Boolean values, while 'HomePlanet', 'Destination', 'Deck', and 'Side' were categorical, and all were converted to integers to reduce complexity.
+StandardScaler was applied to normalize the data, enhancing model efficiency. This standardization process ensures that each feature has a mean of zero and a standard deviation of one, allowing them to contribute equally to the model’s performance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
