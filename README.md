@@ -90,7 +90,21 @@ This is a group assignment where students will participate in a Kaggle competiti
 
 
 ## Data
-<!-- content -->
+<!-- content -->Data was gathered from personal records from the damaged computer system of the Spaceship Titanic, which was damaged following a spacetime anomaly collision.​The dataset predicts if passengers were transferred to an alternate dimension.​
+Passenger ID, HomePlanet, CryoSleep, cabin number, destination, age, VIP, costs, name, and whether or not they were transported to a different dimension are all included in the dataset. In addition, it displays name, age, VIP service, costs, and cabin numbers.​
+Both numerical and categorical elements are included in the data​.some records have missing values that need to be handled properly for modelling to be effective.​A passenger's ability to be moved to a different dimension is indicated by the binary target variable "Transported" (True/False)File and Data Field Descriptions
+train.csv - Personal records for about two-thirds (~8700) of the passengers, to be used as training data.
+PassengerId - A unique Id for each passenger. Each Id takes the form gggg_pp where gggg indicates a group the passenger is travelling with and pp is their number within the group. People in a group are often family members, but not always.
+HomePlanet - The planet the passenger departed from, typically their planet of permanent residence.
+CryoSleep - Indicates whether the passenger elected to be put into suspended animation for the duration of the voyage. Passengers in cryosleep are confined to their cabins.
+Cabin - The cabin number where the passenger is staying. Takes the form deck/num/side, where side can be either P for Port or S for Starboard.
+Destination - The planet the passenger will be debarking to.
+Age - The age of the passenger.
+VIP - Whether the passenger has paid for special VIP service during the voyage.
+RoomService, FoodCourt, ShoppingMall, Spa, VRDeck - Amount the passenger has billed at each of the Spaceship Titanic's many luxury amenities.
+Name - The first and last names of the passenger.
+Transported - Whether the passenger was transported to another dimension. This is the target, the column you are trying to predict.
+test.csv - Personal records for the remaining one-third (~4300) of the passengers, to be used as test data. Your task is to predict the value of Transported for the passengers in this set.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
