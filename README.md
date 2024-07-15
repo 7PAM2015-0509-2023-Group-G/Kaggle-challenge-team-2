@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 
-<!-- PROJECT LOGO -->
+<!-- TEAM LOGO -->
 <br />
 <div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -21,7 +21,7 @@ Team Members:
 - **Gobu Babu** - [GitHub](https://github.com/gobucbabu)
 - **Aaron Joseph** - [GitHub](https://github.com/aaronmj7)
 
-[Contributions](https://github.com/7PAM2015-0509-2023-Group-G/Kaggle-challenge-team-2/graphs/contributors)
+<!-- [Contributions](https://github.com/7PAM2015-0509-2023-Group-G/Kaggle-challenge-team-2/graphs/contributors) -->
 
 
 
