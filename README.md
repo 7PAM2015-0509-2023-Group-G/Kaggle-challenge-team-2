@@ -51,6 +51,9 @@ Team Members:
       <a href="#x-ai">X-AI</a>
     </li>
     <li>
+      <a href="#Result">Result</a>
+    </li>
+    <li>
       <a href="#conclusion">Conclusion</a>
     </li>
   </ol>
@@ -170,7 +173,7 @@ A comparison of the Shapley summary plots for XGBoost, Decision Tree, and Random
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-##  Result
+## Result
 <!-- content -->
 XAI analysis reveals that the features CryoSleep, Spa, VRDeck, RoomService, FoodCourt, and ShoppingMall have higher importance across all models, with varying significance. EDA showed that five of these six numerical features (except CryoSleep) have skewed distributions, likely contributing to their importance. The CryoSleep feature, being binary, shows a clear gap between high and low importance points.
 
