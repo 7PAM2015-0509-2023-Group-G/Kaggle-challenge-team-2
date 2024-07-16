@@ -90,21 +90,25 @@ This is a group assignment where students will participate in a Kaggle competiti
 
 
 ## Data
-<!-- content -->Data was gathered from personal records from the damaged computer system of the Spaceship Titanic, which was damaged following a spacetime anomaly collision.​The dataset predicts if passengers were transferred to an alternate dimension.​
-Passenger ID, HomePlanet, CryoSleep, cabin number, destination, age, VIP, costs, name, and whether or not they were transported to a different dimension are all included in the dataset. In addition, it displays name, age, VIP service, costs, and cabin numbers.​
-Both numerical and categorical elements are included in the data​.There are 7 categorical values and 6 numerical values and 1 boolean value which is in the submission file.some records have missing values that need to be handled properly for modelling to be effective.​A passenger's ability to be moved to a different dimension is indicated by the binary target variable "Transported" (True/False)File and Data Field Descriptions
-train.csv - Personal records for about two-thirds (~8700) of the passengers, to be used as training data.
-PassengerId - A unique Id for each passenger. Each Id takes the form gggg_pp where gggg indicates a group the passenger is travelling with and pp is their number within the group. People in a group are often family members, but not always.
-HomePlanet - The planet the passenger departed from, typically their planet of permanent residence.
-CryoSleep - Indicates whether the passenger elected to be put into suspended animation for the duration of the voyage. Passengers in cryosleep are confined to their cabins.
-Cabin - The cabin number where the passenger is staying. Takes the form deck/num/side, where side can be either P for Port or S for Starboard.
-Destination - The planet the passenger will be debarking to.
-Age - The age of the passenger.
-VIP - Whether the passenger has paid for special VIP service during the voyage.
-RoomService, FoodCourt, ShoppingMall, Spa, VRDeck - Amount the passenger has billed at each of the Spaceship Titanic's many luxury amenities.
-Name - The first and last names of the passenger.
-Transported - Whether the passenger was transported to another dimension. This is the target, the column you are trying to predict.
-test.csv - Personal records for the remaining one-third (~4300) of the passengers, to be used as test data. Your task is to predict the value of Transported for the passengers in this set.
+<!-- content -->
+Data was collected from personal records stored in the damaged computer system of the Spaceship Titanic, which suffered damage following a collision with a spacetime anomaly. The dataset aims to predict whether passengers were transferred to an alternate dimension.
+
+The dataset includes variables such as Passenger ID, HomePlanet, CryoSleep status, cabin number, destination, age, VIP status, costs, name, and whether the passenger was transported to another dimension. It contains both numerical and categorical elements, with 7 categorical values, 6 numerical values, and 1 boolean value in the submission file. Some records have missing values that need to be addressed for effective modeling. The binary target variable "Transported" (True/False) indicates whether a passenger was moved to a different dimension.
+
+**File and Data Field Descriptions:**
+- **train.csv**: Contains personal records for approximately two-thirds (~8700) of the passengers, used as training data.
+  - **PassengerId**: A unique identifier for each passenger, formatted as gggg_pp, where gggg indicates a group and pp is the passenger's number within the group. Group members are often family members but not always.
+  - **HomePlanet**: The planet from which the passenger departed, typically their permanent residence.
+  - **CryoSleep**: Indicates if the passenger chose to be in suspended animation for the voyage, confining them to their cabins.
+  - **Cabin**: The cabin number where the passenger stayed, formatted as deck/num/side, with side being either P (Port) or S (Starboard).
+  - **Destination**: The planet where the passenger will disembark.
+  - **Age**: The age of the passenger.
+  - **VIP**: Indicates if the passenger paid for VIP service during the voyage.
+  - **RoomService, FoodCourt, ShoppingMall, Spa, VRDeck**: Amounts billed by the passenger at various luxury amenities on the Spaceship Titanic.
+  - **Name**: The first and last names of the passenger.
+  - **Transported**: The target variable indicating whether the passenger was transported to another dimension.
+
+- **test.csv**: Contains personal records for the remaining one-third (~4300) of the passengers, used as test data. The task is to predict the "Transported" value for these passengers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,29 +116,16 @@ test.csv - Personal records for the remaining one-third (~4300) of the passenger
 
 ## Exploratory Data Analysis
 <!-- content -->
-df.info and df.describe reveal that the dataset has null values and that the data types are not optimal.​
+The dataset analysis revealed several key insights. Firstly, the dataset contains null values and suboptimal data types, as indicated by `df.info` and `df.describe`. This necessitates proper handling of missing values and optimization of data types for effective modeling.
 
-The distribution of the target variable, "Transported," is nearly balanced. This benefits training machine learning models from a balanced distribution, since it eliminates bias towards a certain class.​
+The target variable "Transported" is nearly balanced, which is advantageous for training machine learning models as it reduces bias towards any particular class. This balanced distribution ensures that the model can learn to predict both classes effectively.
 
-The "age" feature nearly resembles a normal distribution, but all other numerical features show skewness. The box plots and df.describe corroborate this observation.
+Regarding feature distributions, the "age" feature approximates a normal distribution, while other numerical features exhibit skewness, confirmed by box plots and `df.describe`. The "VIP" feature shows an almost equal distribution between transported and non-transported cases, suggesting it has minimal impact on the target variable. Consequently, the "VIP" feature was excluded from further analysis. The "Num" feature significantly influences the target variable, as shown by its distribution plot. Additionally, the "Deck" feature's value counts plot indicates varying impacts on the target variable across its categories.
 
-The "VIP" feature shows nearly equal distribution of each cases in which people were transported and cases in which they weren't.​This evenly distributed data indicates that the "VIP" feature has little effect on the target variable. We dropped the "VIP" feature from additional examination as a result.​
+The correlation heatmap shows that numerical features do not significantly correlate with each other, suggesting feature independence. This reduces multicollinearity and ensures each feature contributes unique information to the target variable's prediction. The 'group Count' vs 'Transported' count graphic indicates that passengers in groups of two to seven are more likely to be transported. This led to creation of two new features, 'Group' and 'Groupcount', to capture this relationship.
 
-The "Num" feature's distribution plot shows that it has a substantial impact on the target variable.​
+Based on the observation that solo travelers (group count of 1) are less likely to be transported, a new feature 'SoloTraveler' was created to identify passengers traveling alone. These insights and feature engineering steps enhance the dataset's suitability for effective machine-learning modeling.
 
-The "Deck" feature's value counts plot shows how the target variable is influenced differently by the many categories under this feature.​
-
-The correlation heatmap shows that the numerical features do not significantly correlate with one another. Because there aren't many strong correlations between the numerical characteristics, it's likely that the features are independent of one another. ​
-
-This makes machine learning models more effective by lowering multicollinearity and guaranteeing that each feature adds distinct information to the target variable's prediction.​
-
-The 'group Count' vs 'Transported' count graphic makes it evident that Travellers in groups of two to seven are more likely to be transported.​
-
-This implies that the quantity of passengers in a group affects the results of transportation. ​
-
-Consequently, two new features, 'Group' and 'Groupcount', have been created to capture this relationship in the dataset.​
-
-Based on the graph indicating lower transportation likelihood for group count 1, a new feature 'SoloTraveler' was created by checking if the 'Group' count was 1, capturing passengers traveling alone in the dataset.​
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -142,6 +133,7 @@ Based on the graph indicating lower transportation likelihood for group count 1,
 ## Pre-Processing
 <!-- content -->
 Preprocessing involves converting raw data into a clean format, which is essential for enhancing the performance and accuracy of machine learning models. Five preprocessing methods were used in this analysis: Dropping Features, Encoding, Scaling, Imputation, and Principal Component Analysis (PCA). 
+
 The Dropping Features method was employed to remove irrelevant features, resulting in the exclusion of two columns, 'Passenger ID' and 'Name', since Passenger IDs are unique for each record and 'Name' had only 220 non-unique values.
 One-hot encoding was used to convert Boolean and categorical features into integers to simplify the analysis. The columns 'CryoSleep' and 'Transported' contained Boolean values, while 'HomePlanet', 'Destination', 'Deck', and 'Side' were categorical, and all were converted to integers to reduce complexity.
 StandardScaler was applied to normalize the data, enhancing model efficiency. This standardization process ensures that each feature has a mean of zero and a standard deviation of one, allowing them to contribute equally to the model’s performance.
