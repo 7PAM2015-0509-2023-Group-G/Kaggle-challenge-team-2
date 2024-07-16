@@ -161,7 +161,7 @@ Additionally, you applied various preprocessing methods and hyperparameter tunin
 
 ## X-AI
 <!-- content -->
-CryoSleep is identified as the most important feature, having nearly twice the weight of the next most important feature, VRDeck. This indicates that CryoSleep has a significant impact on the model’s predictions. Food Court and Spa have similar importance values, suggesting they contribute equally to the model’s decisions. The Age feature also has a reasonable level of importance, indicating it plays a notable role in classification.
+For our SVC model, CryoSleep is identified as the most important feature, having nearly twice the weight of the next most important feature, VRDeck. This indicates that CryoSleep has a significant impact on the model’s predictions. Food Court and Spa have similar importance values, suggesting they contribute equally to the model’s decisions. The Age feature also has a reasonable level of importance, indicating it plays a notable role in classification.
 On the other hand, the remaining features have relatively small importance values, which are steadily declining. This means they contribute less to the model’s predictions. Additionally, some features appear to have zero importance, indicating they do not influence the model’s decisions at all.
 This analysis helps in understanding which features are most influential in your SVC model and can guide further feature selection or engineering efforts to improve model performance.
 
