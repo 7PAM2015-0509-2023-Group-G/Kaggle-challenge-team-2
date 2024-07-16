@@ -158,6 +158,17 @@ StandardScaler was applied to normalize the data, enhancing model efficiency. Th
 
 ## Conclusion
 <!-- content -->
+- All chosen models improved their initial submission scores upon hyperparameter tuning and
+additional pre-processing. All chosen models performed our prediction tasks in a considerably
+well manner.
+- Tree based approaches showed some similar behaviour, specifically in the feature importance for
+those models, while the rest of the approaches were fairly distinct.
+- Six out of the fourteen features seem to have a higher prediction importance in all models, as
+revealed by the XAI findings. Five of these are the amounts spent on luxury amenities and the
+remaining one being cryosleep.
+- SVC outperformed all other models with a higher score on Kaggle, which was improved upon
+from its initial score of 78.14% to 80.15%. It accurately predicts transported passengers with
+fewer False Negatives, suggesting it is well-suited for this task.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
