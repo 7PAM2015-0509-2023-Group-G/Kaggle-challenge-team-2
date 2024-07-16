@@ -138,8 +138,12 @@ Based on the observation that solo travelers (group count of 1) are less likely 
 Preprocessing involves converting raw data into a clean format, which is essential for enhancing the performance and accuracy of machine learning models. Five preprocessing methods were used in this analysis: Dropping Features, Encoding, Scaling, Imputation, and Principal Component Analysis (PCA). 
 
 The Dropping Features method was employed to remove irrelevant features, resulting in the exclusion of two columns, 'Passenger ID' and 'Name', since Passenger IDs are unique for each record and 'Name' had only 220 non-unique values.
+
 One-hot encoding was used to convert Boolean and categorical features into integers to simplify the analysis. The columns 'CryoSleep' and 'Transported' contained Boolean values, while 'HomePlanet', 'Destination', 'Deck', and 'Side' were categorical, and all were converted to integers to reduce complexity.
-StandardScaler was applied to normalize the data, enhancing model efficiency. This standardization process ensures that each feature has a mean of zero and a standard deviation of one, allowing them to contribute equally to the model’s performance.
+
+StandardScaler was applied to normalize the data, enhancing model efficiency. This standardization process ensures that each feature has a mean of zero and a standard deviation of one, allowing them to contribute equally to the model’s performance. For numerical values, median imputation was used because it is less affected by outliers compared to the mean. For categorical values, mode imputation was used to preserve the proportions of the different categories.
+
+PCA was performed to reduce dimensionality, compress data, extract features, and reduce noise, thereby accelerating model performance
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,6 +177,8 @@ A comparison of the Shapley summary plots for XGBoost, Decision Tree, and Random
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
 ## Result
 <!-- content -->
 XAI analysis reveals that the features CryoSleep, Spa, VRDeck, RoomService, FoodCourt, and ShoppingMall have higher importance across all models, with varying significance. EDA showed that five of these six numerical features (except CryoSleep) have skewed distributions, likely contributing to their importance. The CryoSleep feature, being binary, shows a clear gap between high and low importance points.
@@ -180,6 +186,8 @@ XAI analysis reveals that the features CryoSleep, Spa, VRDeck, RoomService, Food
 The highest Kaggle submission score was 0.80149, ranking at position 544. There were 65 submissions in total, with all models showing significant improvement from their initial scores. The SVC model had the highest score, improving from 0.7814 to 0.8001 after hyperparameter tuning and additional preprocessing. This model appears to accurately predict when passengers are transported, as it has fewer false negatives, 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## Conclusion
 <!-- content -->
