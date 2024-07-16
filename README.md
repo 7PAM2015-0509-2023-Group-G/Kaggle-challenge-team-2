@@ -161,12 +161,22 @@ Additionally, you applied various preprocessing methods and hyperparameter tunin
 CryoSleep is identified as the most important feature, having nearly twice the weight of the next most important feature, VRDeck. This indicates that CryoSleep has a significant impact on the model’s predictions. Food Court and Spa have similar importance values, suggesting they contribute equally to the model’s decisions. The Age feature also has a reasonable level of importance, indicating it plays a notable role in classification.
 On the other hand, the remaining features have relatively small importance values, which are steadily declining. This means they contribute less to the model’s predictions. Additionally, some features appear to have zero importance, indicating they do not influence the model’s decisions at all.
 This analysis helps in understanding which features are most influential in your SVC model and can guide further feature selection or engineering efforts to improve model performance.
+
+
 Logistic Regression model, Spa and VRDeck are the most important features, followed by RoomService and FoodCourt. Other features, except for ShoppingMall, have smaller importance. The CryoSleep feature shows a clear separation between higher and lower points, indicating its distinct impact on the model’s predictions.
+
+
 A comparison of the Shapley summary plots for XGBoost, Decision Tree, and Random Forest models, all of which are based on decision trees, shows that Spa, VRDeck, RoomService, and FoodCourt are the predominant features. However, there are no recognizable patterns in the behavior of the remaining features, though most features do have some relative importance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+##  Result
+<!-- content -->
+XAI analysis reveals that the features CryoSleep, Spa, VRDeck, RoomService, FoodCourt, and ShoppingMall have higher importance across all models, with varying significance. EDA showed that five of these six numerical features (except CryoSleep) have skewed distributions, likely contributing to their importance. The CryoSleep feature, being binary, shows a clear gap between high and low importance points.
 
+The highest Kaggle submission score was 0.80149, ranking at position 544. There were 65 submissions in total, with all models showing significant improvement from their initial scores. The SVC model had the highest score, improving from 0.7814 to 0.8001 after hyperparameter tuning and additional preprocessing. This model appears to accurately predict when passengers are transported, as it has fewer false negatives, 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Conclusion
 <!-- content -->
